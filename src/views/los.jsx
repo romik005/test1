@@ -159,7 +159,7 @@ function Ios() {
                                 </div>
                                 <div className="u-size-30">
                                     <div className="u-layout-row">
-                                        <div className="u-align-center-sm u-align-center-xs u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-list u-repeater u-list-1 ios_ecosystem" style={{ minHeight: '200px !important',minHeight:'auto' }}>
+                                        <div className="u-align-center-sm u-align-center-xs u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-list u-repeater u-list-1 ios_ecosystem" style={{minHeight:'auto' }}>
                                             <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle hightset">
                                                 <div className="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
                                                     <img src="/assets/images/ios/i-phone.png" alt="" className="u-image u-image-contain u-image-default u-preserve-proportions u-image-2" />
