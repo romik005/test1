@@ -48,6 +48,7 @@ function Header() {
         setName({activeters:clicked});
         setTimeout(function(){typwwritingsss()},100);
         setTimeout(function(){addpagehight()},150);
+        console.log(name)
     }
 
     function mobilmenu(){
@@ -120,7 +121,7 @@ function Header() {
                     </Link>
                     <nav className="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1" id='closepopup'>
                         <div className="menu-collapse" style={{ fontSize: '1rem', letterSpacing: '0px', fontWeight: 700, textTransform: 'uppercase', marginRight: '20px' }}>
-                            <a to='' className="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-text-shadow u-custom-text-shadow-x u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style={{ padding: '4px', fontSize: 'calc(1em + 8px)' }}>
+                            <Link to='#' className="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-text-shadow u-custom-text-shadow-x u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style={{ padding: '4px', fontSize: 'calc(1em + 8px)' }}>
                                 <svg>
                                     <use xlinkHref="#menu-hamburger" />
                                 </svg>
@@ -133,7 +134,7 @@ function Header() {
                                         </symbol>
                                     </defs>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                         <div className="u-custom-menu u-nav-container">
                             <ul className="u-nav u-spacing-30 u-unstyled u-nav-1" style={{padding:'27px 0px',lineHeight: '2'}}>
