@@ -14,11 +14,12 @@ function Home() {
 
         async function portfoiloapi() {
             const dd = await axios.get('/api/application');
+            console.log("port")
             setPort(dd.data);
         }
         portfoiloapi();
     }, []);
-    console.log(port)
+    
     return (
         <>
             <section className="u-clearfix u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-white u-section-1 laravel_benner" id="carousel_7f69">
