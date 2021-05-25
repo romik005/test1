@@ -11,13 +11,14 @@ function Portfolio() {
         document.title = 'Portfolio';
         
         async function portfoiloapi() {
-            const dd = await axios.get('/api/application').then(response => { 
-                console.log(response)
+            await axios.get('/api/application').then(response => { 
+                console.log("response")
+                setPport(response.data);
             })
             .catch(error => {
-                console.log(error.response)
+                console.log("error.response")
             });
-            setPport(dd.data);
+            
         }
         portfoiloapi();
     }, []);
