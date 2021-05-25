@@ -18,6 +18,7 @@ function Home() {
         }
         portfoiloapi();
     }, []);
+    console.log(port)
     return (
         <>
             <section className="u-clearfix u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-white u-section-1 laravel_benner" id="carousel_7f69">
