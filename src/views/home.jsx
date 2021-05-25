@@ -14,7 +14,6 @@ function Home() {
 
         async function portfoiloapi() {
             const dd = await axios.get('/api/application');
-            console.log("port")
             setPort(dd.data);
         }
         portfoiloapi();
