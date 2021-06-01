@@ -10,7 +10,7 @@ function Form() {
         document.title = 'Team';
 
         async function dataget(){
-            const dd = await axios('http://134.209.103.120:5500/api/team');
+            const dd = await axios.get('http://134.209.103.120:5500/api/team');
             setTeam(dd.data);
         }
         dataget();
