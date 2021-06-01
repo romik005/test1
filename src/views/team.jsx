@@ -1,23 +1,12 @@
-import React,{ useEffect, useState } from "react";
-import axios from 'axios';
-import Ssssss from './componets/team.jsx';
+import React,{ useEffect } from "react";
+// import { Link } from "react-router-dom";
 
-function Form() {
-
-    const [team,setTeam] = useState();
-
+function Team() {
     useEffect(() => {
         document.title = 'Team';
-
-        async function dataget(){
-            const dd = await axios.get('http://134.209.103.120:5500/api/team');
-            setTeam(dd.data);
-        }
-        dataget();
-    },[]);
-
+    });
     return (
-        <>  
+        <>
             <section className="u-clearfix u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-white u-section-1 laravel_uiux_benner " id="carousel_7f69">
                 <div className="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
                     <div className="u-gutter-0 u-layout">
@@ -37,14 +26,14 @@ function Form() {
                                     <div className="u-container-style u-layout-cell u-right-cell u-size-38 u-layout-cell-2">
                                         <div className="u-container-layout u-container-layout-2">
                                             <div className="laravel_leptop_slider">
-                                                <img src="/assets/images/uiux/10.png" className="laravel_uiux_back_1" alt=''/>
-                                                <img src="/assets/images/uiux/11_.png" className="laravel_uiux_back_2" alt=''/>
-                                                <img src="/assets/images/uiux/12.png" className="laravel_uiux_back_3" alt=''/>
-                                                <img src="/assets/images/uiux/13.png" className="laravel_uiux_back_4" alt=''/>
-                                                <img src="/assets/images/team/back21.png" className="laravel_team_1" alt=''/>
+                                                <img src="/assets/images/ui ux/10.png" className="laravel_uiux_back_1" alt=''/>
+                                                <img src="/assets/images/ui ux/11_.png" className="laravel_uiux_back_2" alt=''/>
+                                                <img src="/assets/images/ui ux/12.png" className="laravel_uiux_back_3" alt=''/>
+                                                <img src="/assets/images/ui ux/13.png" className="laravel_uiux_back_4" alt=''/>
+                                                <img src="/assets/images/team/back (2).png" className="laravel_team_1" alt=''/>
                                             </div>
                                             <div className="laravel_phone_slider">
-                                                <img src="/assets/images/team/back21.png" alt=''/>
+                                                <img src="/assets/images/team/back (2).png" alt=''/>
                                             </div>
                                         </div>
                                     </div>
@@ -54,6 +43,7 @@ function Form() {
                     </div>
                 </div>
             </section>
+            
             <section className="u-clearfix u-section-2" id="sec-d803">
                 <div className="u-clearfix u-sheet u-sheet-1" style={{ height: 'fit-content',minHeight:'fit-content' }}>
                     <div className="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -111,9 +101,8 @@ function Form() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
+                </div></section>
+            
             <section className="u-clearfix u-section-2" id="sec-d803">
                 <div className="u-clearfix u-sheet u-sheet-1" style={{ minHeight: 'fit-content',marginBottom:'3%' }}>
                     <div className="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
@@ -138,13 +127,123 @@ function Form() {
                                 <div className="u-size-30">
                                     <div className="u-layout-row">
                                         <div className="u-align-center-sm u-align-center-xs u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-list u-repeater u-list-1 laravel_company_team" style={{ minHeight: '200px' }}>
-                                           {team ? 
-                                            (
-                                                <Ssssss stude={team} />
-                                            ):
-                                            (
-                                                ''
-                                            )}
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/romik.PNG")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Romik Amreliya</div>
+                                                        <div className="laravel_company_team_pojishan">Wordpress / Nodejs / laravel developer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Romik Amreliya</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">Wordpress / Nodejs / laravel developer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/priyag.PNG")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Priyagpari Goswami</div>
+                                                        <div className="laravel_company_team_pojishan">Laravel / Wordpress / Node js Developer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Priyagpari Goswami</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">Laravel / Wordpress / Node js Developer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/sagar.PNG")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Sagar Pithadiya</div>
+                                                        <div className="laravel_company_team_pojishan">Andorid / React Native Developer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Sagar Pithadiya</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">Andorid / React Native Developer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/vivek.PNG")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Vivek Maheta</div>
+                                                        <div className="laravel_company_team_pojishan">UI/UX Designer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Vivek Maheta</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">UI/UX Designer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/raj.PNG")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Raj Gadara</div>
+                                                        <div className="laravel_company_team_pojishan">Andorid Developer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Raj Gadara</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">Andorid Developer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/Priyank.PNG")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Priyank Chotaliya</div>
+                                                        <div className="laravel_company_team_pojishan">3D Designer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Priyank Chotaliya</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">3D Designer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/Kishan.png")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Kishan Bhuva</div>
+                                                        <div className="laravel_company_team_pojishan">Maya 3D Design</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Kishan Bhuva</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">Maya 3D Design</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/Madhav.png")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Madhav Monpara</div>
+                                                        <div className="laravel_company_team_pojishan">Unity Developer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Madhav Monpara</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">Unity Developer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/Vivekpatel.png")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Vivek Patel</div>
+                                                        <div className="laravel_company_team_pojishan">Unity Developer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Vivek Patel</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">Unity Developer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -153,9 +252,8 @@ function Form() {
                     </div>
                 </div>
             </section>
-            
         </>
     )
 }
 
-export default Form
+export default Team
