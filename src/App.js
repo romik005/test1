@@ -16,7 +16,7 @@ import Web from './views/web.jsx'
 import career from './views/career.jsx'
 import team from './views/team.jsx'
 import contact from './views/Contact.jsx'
-import life from './views/life.jsx'
+// import life from './views/life.jsx'
 
 import './helper/global';
 
@@ -40,7 +40,7 @@ const App = (global) => {
         <Route path='/career/careeropenings' component={career} />
         <Route path='/team' component={team} />
         <Route path='/contact' component={contact} />
-        <Route path='/career/life' component={life} />
+//         <Route path='/career/life' component={life} />
       </Switch>
       <Footer />
     </>
