@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import axios from 'axios';
+import axios from 'axios';
 // import Careeropening from './componets/careeropening.jsx';
 
 function Career() {
@@ -9,7 +9,7 @@ function Career() {
     useEffect(() => {
         document.title = 'Life';
         async function portfoiloapi() {
-            // const dd = await axios.get('/api/careerlife');
+            const dd = await axios.get('/api/careerlife');
             setCareer(dd.data);
         }
         portfoiloapi();
