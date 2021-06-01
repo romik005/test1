@@ -14,7 +14,7 @@ import unity from './views/unity.jsx'
 import Web from './views/web.jsx'
 // import blog from './views/blog.jsx'
 import career from './views/career.jsx'
-import team from './views/team.jsx'
+// import team from './views/team.jsx'
 import contact from './views/Contact.jsx'
 // import life from './views/life.jsx'
 
@@ -38,7 +38,7 @@ const App = (global) => {
         <Route path='/service/web' component={Web} />
         {/* <Route path='/blog' component={blog} /> */}
         <Route path='/career/careeropenings' component={career} />
-        <Route path='/team' component={team} />
+//         <Route path='/team' component={team} />
         <Route path='/contact' component={contact} />
 //         <Route path='/career/life' component={life} />
       </Switch>
