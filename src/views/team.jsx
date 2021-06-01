@@ -13,7 +13,7 @@ function Form() {
             const dd = await fetch('http://134.209.103.120:5500/api/team');
             
             //fetch('http://134.209.103.120:5500/api/team') .then(response => response.json()) .then(data => console.log(data));
-            console.log(dd);
+//             console.log(dd);
             setTeam(dd.data);
         }
         dataget();
@@ -141,13 +141,13 @@ function Form() {
                                 <div className="u-size-30">
                                     <div className="u-layout-row">
                                         <div className="u-align-center-sm u-align-center-xs u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-list u-repeater u-list-1 laravel_company_team" style={{ minHeight: '200px' }}>
-                                           /* {team ? 
+                                           {team ? 
                                             (
                                                 <Ssssss stude={team} />
                                             ):
                                             (
                                                 ''
-                                            )} */
+                                            )}
                                         </div>
                                     </div>
                                 </div>
