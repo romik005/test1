@@ -12,7 +12,7 @@ function Form() {
         async function dataget(){
             const dd = await axios('http://134.209.103.120:5500/api/team');
             
-            //fetch('http://134.209.103.120:5500/api/team') .then(response => response.json()) .then(data => console.log(data));
+           fetch('http://134.209.103.120:5500/api/team') .then(response => response.json()) .then(data => console.log(data));
 //             console.log(dd);
             setTeam(dd.data);
         }
