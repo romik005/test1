@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
+// import axios from 'axios';
 // import Careeropening from './componets/careeropening.jsx';
 
 function Career() {
 
-    const [career, setCareer] = useState();
+    // const [career, setCareer] = useState();
 
     useEffect(() => {
         document.title = 'Life';
         async function portfoiloapi() {
-            const dd = await axios.get('/api/careerlife');
-            setCareer(dd.data);
+            // const dd = await axios.get('/api/careerlife');
+            // setCareer(dd.data);
         }
         portfoiloapi();
     }, []);
