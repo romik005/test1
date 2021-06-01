@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
-import Careeropening from './componets/careeropening.jsx';
+// import axios from 'axios';
+// import Careeropening from './componets/careeropening.jsx';
 
 function Career() {
 
@@ -9,7 +9,7 @@ function Career() {
     useEffect(() => {
         document.title = 'Life';
         async function portfoiloapi() {
-            const dd = await axios.get('/api/careerlife');
+            // const dd = await axios.get('/api/careerlife');
             setCareer(dd.data);
         }
         portfoiloapi();
@@ -29,7 +29,7 @@ function Career() {
                         <div className="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
                             <div className="u-layout">
                                 <div>
-                                    <div className="u-layout-row career_moniter" key={index}>
+                                    <div className="u-layout-row career_moniter">
                                         <div className="u-container-style u-layout-cell u-size-25">
                                             <div className="u-container-layout u-container-layout-1">
                                                 <img alt="" className='life_images' src='http://134.209.103.120:5500/public/images/lifeimages-1621836280894.png' />
@@ -55,7 +55,7 @@ function Career() {
                                                         </div>
                                                     </div>
                                                     <div className='life_description'>
-                                                        {post.description}
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -78,7 +78,7 @@ function Career() {
                                </div>
 
                                 <div>
-                                    <div className="u-layout-row career_moniter" key={index}>
+                                    <div className="u-layout-row career_moniter">
                                         <div className="u-container-style u-layout-cell u-size-25 u-container-layout-1">
                                             <div className="u-container-layout u-container-layout-1">
                                                 <h2 className="u-align-center u-custom-font u-text u-text-1 laravel_uiux_disk_title" style={{ margin: '16px 0 0 0' }}>Charity trust</h2>
@@ -90,7 +90,7 @@ function Career() {
                                                     </div>
                                                 </div>
                                                 <div className='life_description'>
-                                                    {post.description}
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -126,7 +126,7 @@ function Career() {
                                 </div>
 
                                 <div>
-                                    <div className="u-layout-row career_moniter" key={index}>
+                                    <div className="u-layout-row career_moniter">
                                         <div className="u-container-style u-layout-cell u-size-25">
                                             <div className="u-container-layout u-container-layout-1">
                                                 <img alt="" className='life_images' src='http://134.209.103.120:5500/public/images/lifeimages-1621835174098.png' />
