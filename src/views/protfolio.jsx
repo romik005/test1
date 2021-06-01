@@ -11,7 +11,7 @@ function Portfolio() {
         document.title = 'Portfolio';
         
         async function portfoiloapi() {
-            await axios.get('/api/application').then(response => { 
+            await axios.get('http://134.209.103.120:5500/api/application').then(response => { 
                 setPport(response.data);
             })
             .catch(error => {
