@@ -10,11 +10,11 @@ function Form() {
         document.title = 'Team';
 
         async function dataget(){
-            //const dd = await fetch('http://134.209.103.120:5500/api/team');
+            const dd = await fetch('http://134.209.103.120:5500/api/team');
             
-            fetch('http://134.209.103.120:5500/api/team') .then(response => response.json()) .then(data => console.log(data));
-            //console.log(dd);
-            //setTeam(dd.data);
+            //fetch('http://134.209.103.120:5500/api/team') .then(response => response.json()) .then(data => console.log(data));
+            console.log(dd);
+            setTeam(dd.data);
         }
         dataget();
     },[]);
