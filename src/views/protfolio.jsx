@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import cors from 'cors';
 import Protfoli from "./componets/Portfolio.jsx";
 
 
@@ -8,18 +7,14 @@ function Portfolio() {
 
     const [pport, setPport] = useState();
 
+    
+
+
     useEffect(() => {
         document.title = 'Portfolio';
         
         async function portfoiloapi() {
-				
-			const corsOptions = {
-			  origin: 'http://134.209.103.120:5500',
-			  Access-Control-Allow-Origin: 'http://134.209.103.120:5500/*',
-			  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-			}
-
-            const dd = await axios.get('/api/application', cors(corsOptions));
+            const dd = await axios.get('/api/application');
             setPport(dd.data);
         }
         portfoiloapi();
