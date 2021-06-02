@@ -30,7 +30,6 @@ function Career() {
                             <div className="u-layout">
                                 
 
-
                             </div>
                         </div>
                     </div>
