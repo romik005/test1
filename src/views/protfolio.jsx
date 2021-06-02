@@ -15,6 +15,7 @@ function Portfolio() {
 				
 			const corsOptions = {
 			  origin: 'http://134.209.103.120:5500',
+			  Access-Control-Allow-Origin: 'http://134.209.103.120:5500/*',
 			  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 			}
 
