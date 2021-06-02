@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
-// import axios from 'axios';
-// import Careeropening from './componets/careeropening.jsx';
+import axios from 'axios';
+import $ from "jquery";
+import Careeropening from './componets/careeropening.jsx';
 
 function Career() {
 
-    // const [career, setCareer] = useState();
+    const [career, setCareer] = useState();
 
     useEffect(() => {
         document.title = 'Life';
         async function portfoiloapi() {
-            // const dd = await axios.get('/api/careerlife');
-            // setCareer(dd.data);
+            const dd = await axios.get('/api/careerlife');
+            setCareer(dd.data);
+            var heght = $('#testing div').height();
+            $('#testing').css('height',heght)
         }
         portfoiloapi();
     }, []);
@@ -24,12 +27,17 @@ function Career() {
                         <p className="u-align-center u-text u-text-body-color life_main_description" style={{ width: '60%', margin: '16px auto' }}>We Work With the motto of "The higher engagement of&nbsp; staff enhances talent, inspires loyalty, and increased corporate results".</p>
                     </div>
                 </section>
-                <section className="u-align-left u-clearfix u-section-1" id="sec-0fe2" style={{minHeight:'fit-content'}}>
-                    <div className="u-clearfix u-sheet u-sheet-1" style={{ marginTop: '100px',marginBottom:'100px',minHeight:'fit-content' }}>
+                <section className="u-align-left u-clearfix u-section-1" id="sec-0fe2" style={{minHeight:'auto'}}>
+                    <div className="u-clearfix u-sheet u-sheet-1" style={{ marginTop: '100px',marginBottom:'100px',minHeight:'auto' }}>
                         <div className="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
                             <div className="u-layout">
-                                
-
+                                {career ?
+                                    (
+                                        <Careeropening data={career} />
+                                    ) :
+                                    (
+                                        ''
+                                    )}
                             </div>
                         </div>
                     </div>
