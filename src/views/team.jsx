@@ -127,19 +127,6 @@ function Team() {
                                 <div className="u-size-30">
                                     <div className="u-layout-row">
                                         <div className="u-align-center-sm u-align-center-xs u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-list u-repeater u-list-1 laravel_company_team" style={{ minHeight: '200px' }}>
-                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white">
-                                                <div className="laravel_company_team_card">
-                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/romik.PNG")' }} />
-                                                    <div className="laravel_company_team_backgraund">
-                                                        <div className="laravel_company_team_name">Romik Amreliya</div>
-                                                        <div className="laravel_company_team_pojishan">Wordpress / Nodejs / laravel developer</div>
-                                                        <div className="laravel_company_owner_hover">
-                                                            <div className="laravel_company_team_name text_fff">Romik Amreliya</div>
-                                                            <div className="laravel_company_team_pojishan text_fff">Wordpress / Nodejs / laravel developer</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white ">
                                                 <div className="laravel_company_team_card">
                                                     <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/priyag.PNG")' }} />
@@ -162,6 +149,19 @@ function Team() {
                                                         <div className="laravel_company_owner_hover">
                                                             <div className="laravel_company_team_name text_fff">Sagar Pithadiya</div>
                                                             <div className="laravel_company_team_pojishan text_fff">Andorid / React Native Developer</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="u-container-style u-list-item u-repeater-item u-shape-rectangle u-white">
+                                                <div className="laravel_company_team_card">
+                                                    <div className="laravel_company_team_imges" style={{ backgroundImage: 'url("/assets/images/team/romik.PNG")' }} />
+                                                    <div className="laravel_company_team_backgraund">
+                                                        <div className="laravel_company_team_name">Romik Amreliya</div>
+                                                        <div className="laravel_company_team_pojishan">Wordpress / Nodejs / laravel developer</div>
+                                                        <div className="laravel_company_owner_hover">
+                                                            <div className="laravel_company_team_name text_fff">Romik Amreliya</div>
+                                                            <div className="laravel_company_team_pojishan text_fff">Wordpress / Nodejs / laravel developer</div>
                                                         </div>
                                                     </div>
                                                 </div>
